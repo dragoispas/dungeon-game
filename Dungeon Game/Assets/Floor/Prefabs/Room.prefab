@@ -1521,6 +1521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomDetails: {fileID: 2276284467060880242}
+  bigRoomDetails: {fileID: 0}
   Doors: []
 --- !u!1 &2250007457952849812
 GameObject:
