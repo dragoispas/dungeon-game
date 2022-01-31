@@ -28,7 +28,6 @@ public class CharacterSpriteController : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);
         float z = transform.rotation.eulerAngles.z;
-        Debug.Log(z);
         if(z>0)
         {
             if(z<20)
