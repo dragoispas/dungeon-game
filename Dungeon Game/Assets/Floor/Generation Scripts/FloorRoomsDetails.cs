@@ -1100,7 +1100,7 @@ public class FloorRoomsDetails : MonoBehaviour
         {
             return;
         }
-        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS~~~~~~~~~~~~~~~~~~");
+        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOM 1111111~~~~~~~~~~~~~~~~~~");
         foreach(GameObject room in Rooms)
         {
             RoomDetails roomDetails = room.GetComponent<RoomDetails>();
@@ -1236,7 +1236,7 @@ public class FloorRoomsDetails : MonoBehaviour
 
         }
 
-        cannotSpawnLRoomTopLeft = true;
+        // cannotSpawnLRoomTopLeft = true;
         
     }
 
@@ -1246,7 +1246,7 @@ public class FloorRoomsDetails : MonoBehaviour
         {
             return;
         }
-        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS~~~~~~~~~~~~~~~~~~");
+        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS   2222222222~~~~~~~~~~~~~~~~~~");
         foreach(GameObject room in Rooms)
         {
             RoomDetails roomDetails = room.GetComponent<RoomDetails>();
@@ -1382,7 +1382,7 @@ public class FloorRoomsDetails : MonoBehaviour
 
         }
 
-        cannotSpawnLRoomTopRight = true;
+        //cannotSpawnLRoomTopRight = true;
         
     }
 
@@ -1392,7 +1392,7 @@ public class FloorRoomsDetails : MonoBehaviour
         {
             return;
         }
-        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS~~~~~~~~~~~~~~~~~~");
+        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS    3333333333~~~~~~~~~~~~~~~~~~");
         foreach(GameObject room in Rooms)
         {
             RoomDetails roomDetails = room.GetComponent<RoomDetails>();
@@ -1528,7 +1528,7 @@ public class FloorRoomsDetails : MonoBehaviour
 
         }
 
-        cannotSpawnLRoomBottomRight = true;
+        // cannotSpawnLRoomBottomRight = true;
         
     }
 
@@ -1538,7 +1538,7 @@ public class FloorRoomsDetails : MonoBehaviour
         {
             return;
         }
-        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS~~~~~~~~~~~~~~~~~~");
+        Debug.Log("~~~~~~~~~~~~~~~~~~~STARTED TO ADD L ROOMS     4444444444444~~~~~~~~~~~~~~~~~~");
         foreach(GameObject room in Rooms)
         {
             RoomDetails roomDetails = room.GetComponent<RoomDetails>();
@@ -1675,7 +1675,7 @@ public class FloorRoomsDetails : MonoBehaviour
 
         }
 
-        cannotSpawnLRoomBottomLeft = true;
+        // cannotSpawnLRoomBottomLeft = true;
         
     }
 
@@ -1683,12 +1683,14 @@ public class FloorRoomsDetails : MonoBehaviour
     {
         if(cannotSpawnLRoomTopLeft && cannotSpawnLRoomTopRight && cannotSpawnLRoomBottomRight && cannotSpawnLRoomBottomLeft)
         {
+            Debug.Log("Cannot spawn any more L Rooms");
             cannotSpawnLRooms = true;
             return;
         }
         int x = Random.Range(1,5);
         if(cannotSpawnLRoomTopLeft)
         {
+            Debug.Log("Cannot spawn 111111111111111111111111");
             while(x == 1)
             {
                 x = Random.Range(1,5);
@@ -1696,6 +1698,7 @@ public class FloorRoomsDetails : MonoBehaviour
         }
         else if(cannotSpawnLRoomTopRight)
         {
+            Debug.Log("Cannot spawn 22222222222222222222222");
             while(x == 2)
             {
                 x = Random.Range(1,5);
@@ -1703,6 +1706,7 @@ public class FloorRoomsDetails : MonoBehaviour
         }
         else if(cannotSpawnLRoomBottomRight)
         {
+            Debug.Log("Cannot spawn 333333333333333333333");
             while(x == 3)
             {
                 x = Random.Range(1,5);
@@ -1710,6 +1714,7 @@ public class FloorRoomsDetails : MonoBehaviour
         }
         else if(cannotSpawnLRoomBottomLeft)
         {
+            Debug.Log("Cannot spawn 44444444444444444444");
             while(x == 4)
             {
                 x = Random.Range(1,5);

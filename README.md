@@ -12,14 +12,4 @@ Ideas
 To Do
 ====
 
-- ~~MAKE IT SO THAT CAMERA SNAPS TO THE CENTRE OF THE ROOM IN CASE IT IS NOT ALLIGNED~~
-
-- ~~L ROOMS WILL NOT SPAWN WHERE THERE IS ANOTHER ROOM IN THE MISSING CORNER~~
-
-- ADD 2X2 ROOMS AND 1X2 ROOMS ?
-
-- ~~add a square to the player that only interacts with the camera movement zones~~ 
-
-- Make a starting room
-
-- ~~Make camera transition smoothly between rooms~~
+- cannotSpawnLRoomBottomLeft and other 3 not working properly, commented them for now (will always only spawn 4 L rooms because cannotSpawn goes true after first spawn even though it should be able to spawn more)

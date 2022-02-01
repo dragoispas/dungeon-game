@@ -752,10 +752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e3a8dfe49194a4bb7dcd264e3d0606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomsToGenerate: 30
-  MaxHeightOrLength: 5
-  extraRooms: 5
-  LRoomsToSpawn: 5
+  RoomsToGenerate: 100
+  MaxHeightOrLength: 8
+  extraRooms: 15
+  LRoomsToSpawn: 10
   Grid: []
   Rooms: []
   RestrictedPositions: []
