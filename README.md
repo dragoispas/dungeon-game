@@ -13,3 +13,12 @@ To Do
 ====
 
 - cannotSpawnLRoomBottomLeft and other 3 not working properly, commented them for now (will always only spawn 4 L rooms because cannotSpawn goes true after first spawn even though it should be able to spawn more)
+
+- first room does not open and close doors
+
+- add the new tiles to all room types
+
+
+- add shadows to walls
+
+
