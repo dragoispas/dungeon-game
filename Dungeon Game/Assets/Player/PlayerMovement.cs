@@ -37,39 +37,43 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if(collider2D.tag == "PassTop")
+        if(collider2D.tag == "Passthrough")
         {
-            rb.velocity = Vector3.zero;
-            Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y) + 3f, transform.position.z);
-            transform.position = newPosition;
+            if(collider2D.GetComponent<DoorPassthrough>().Direction == "TOP")
+            {
+                rb.velocity = Vector3.zero;
+                Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y) + 3f, transform.position.z);
+                transform.position = newPosition;
 
-            cameraFollow.moveCameraTop();
+                cameraFollow.moveCameraTop();
+            }
+            if(collider2D.GetComponent<DoorPassthrough>().Direction == "RIGHT")
+            {
+                rb.velocity = Vector3.zero;
+                Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x) + 3f, Mathf.RoundToInt(transform.position.y), transform.position.z);
+                transform.position = newPosition;
+
+                cameraFollow.moveCameraRight();
+            }
+            if(collider2D.GetComponent<DoorPassthrough>().Direction == "BOTTOM")
+            {
+                rb.velocity = Vector3.zero;
+                Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y) - 3f, transform.position.z);
+                transform.position = newPosition;
+
+                cameraFollow.moveCameraBottom();
+            }
+            if(collider2D.GetComponent<DoorPassthrough>().Direction == "LEFT")
+            {
+                rb.velocity = Vector3.zero;
+                Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x) - 3f, Mathf.RoundToInt(transform.position.y), transform.position.z);
+                transform.position = newPosition;
+
+                cameraFollow.moveCameraLeft();
+            }
 
         }
-        if(collider2D.tag == "PassRight")
-        {
-            rb.velocity = Vector3.zero;
-            Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x) + 3f, Mathf.RoundToInt(transform.position.y), transform.position.z);
-            transform.position = newPosition;
 
-           cameraFollow.moveCameraRight();
-        }
-        if(collider2D.tag == "PassBottom")
-        {
-            rb.velocity = Vector3.zero;
-            Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y) - 3f, transform.position.z);
-            transform.position = newPosition;
-
-            cameraFollow.moveCameraBottom();
-        }
-        if(collider2D.tag == "PassLeft")
-        {
-            rb.velocity = Vector3.zero;
-            Vector3 newPosition = new Vector3(Mathf.RoundToInt(transform.position.x) - 3f, Mathf.RoundToInt(transform.position.y), transform.position.z);
-            transform.position = newPosition;
-
-            cameraFollow.moveCameraLeft();
-        }
 
     }
 

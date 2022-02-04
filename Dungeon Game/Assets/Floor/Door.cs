@@ -5,9 +5,10 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public bool isActive = true;
-    public GameObject DoorBody;
-    public GameObject PassThrough;
+    public GameObject DoorSwitch;
+    public GameObject Passthrough;
     public GameObject BasicWall;
+    public GameObject DoorSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +22,9 @@ public class Door : MonoBehaviour
     }
     public void setActive(bool setting)
     {
-        DoorBody.SetActive(setting);
-        PassThrough.SetActive(setting);
+        DoorSwitch.SetActive(setting);
+        Passthrough.SetActive(setting);
+        DoorSprite.SetActive(setting);
         BasicWall.SetActive(!setting);
         isActive = setting;
     }
@@ -33,7 +35,7 @@ public class Door : MonoBehaviour
         {
             return;
         }
-        BoxCollider2D boxCollider2D = DoorBody.GetComponent<BoxCollider2D>();
+        BoxCollider2D boxCollider2D = DoorSwitch.GetComponent<BoxCollider2D>();
         if(boxCollider2D==null)
         {
             return;
@@ -47,7 +49,7 @@ public class Door : MonoBehaviour
         {
             return;
         }
-        BoxCollider2D boxCollider2D = DoorBody.GetComponent<BoxCollider2D>();
+        BoxCollider2D boxCollider2D = DoorSwitch.GetComponent<BoxCollider2D>();
         if(boxCollider2D==null)
         {
             return;

@@ -626,7 +626,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8335550245919332247, guid: 182625fc2858de34c93556be0ed7d3cb, type: 3}
   m_PrefabInstance: {fileID: 8416908247300197874}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1221934588
+--- !u!1001 &1023055278
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -680,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 2209208846185664565, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
       propertyPath: m_Name
       value: Room (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209208846185664565, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6132401885485088856, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
@@ -839,31 +843,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1677000761 stripped
+--- !u!1 &1665915789 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2209208846185664565, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
-  m_PrefabInstance: {fileID: 1221934588}
+  m_PrefabInstance: {fileID: 1023055278}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1677000762
+--- !u!114 &1665915790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677000761}
+  m_GameObject: {fileID: 1665915789}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f2cda1ec4ca29f41b2a2929c7be26d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NewRoom: {fileID: 2209208846185664565, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
-  roomDetails: {fileID: 1677000764}
---- !u!114 &1677000764 stripped
+  roomDetails: {fileID: 1665915792}
+--- !u!114 &1665915792 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2276284467060880242, guid: b010a00143a98d749b35a3494a0fec9d, type: 3}
-  m_PrefabInstance: {fileID: 1221934588}
+  m_PrefabInstance: {fileID: 1023055278}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677000761}
+  m_GameObject: {fileID: 1665915789}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fce9e8d11cb3a24dbb6c20e6590ebc3, type: 3}
@@ -1620,9 +1624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  DoorBody: {fileID: 3021687044483093650}
-  PassThrough: {fileID: 8894041773656699934}
+  DoorSwitch: {fileID: 0}
+  Passthrough: {fileID: 0}
   BasicWall: {fileID: 1238972987}
+  DoorSprite: {fileID: 0}
 --- !u!4 &708147879772335352
 Transform:
   m_ObjectHideFlags: 0
@@ -2598,9 +2603,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  DoorBody: {fileID: 8357554068792796516}
-  PassThrough: {fileID: 5702025648207382602}
+  DoorSwitch: {fileID: 0}
+  Passthrough: {fileID: 0}
   BasicWall: {fileID: 544858877}
+  DoorSprite: {fileID: 0}
 --- !u!4 &1718228830925803380
 Transform:
   m_ObjectHideFlags: 0
@@ -3453,9 +3459,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  DoorBody: {fileID: 6773410038101282072}
-  PassThrough: {fileID: 8720270735143003264}
+  DoorSwitch: {fileID: 0}
+  Passthrough: {fileID: 0}
   BasicWall: {fileID: 795029862}
+  DoorSprite: {fileID: 0}
 --- !u!4 &2723629206828602453
 Transform:
   m_ObjectHideFlags: 0
@@ -4812,9 +4819,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  DoorBody: {fileID: 7727316109270855853}
-  PassThrough: {fileID: 2856057329690384647}
+  DoorSwitch: {fileID: 0}
+  Passthrough: {fileID: 0}
   BasicWall: {fileID: 1968193787}
+  DoorSprite: {fileID: 0}
 --- !u!61 &4328851636624028043
 BoxCollider2D:
   m_ObjectHideFlags: 0

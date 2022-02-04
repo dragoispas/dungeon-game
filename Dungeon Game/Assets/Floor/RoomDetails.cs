@@ -42,18 +42,38 @@ public class RoomDetails : MonoBehaviour
             {
                 TopDoor.setActive(false);
             }
+            else
+            {
+                TopDoor.setActive(true);
+            }
+
             if(!hasRightDoor)
             {
                 RightDoor.setActive(false);
             }
+            else
+            {
+                RightDoor.setActive(true);
+            }
+
             if(!hasBottomDoor)
             {
                 BottomDoor.setActive(false);
             }
+            else
+            {
+                BottomDoor.setActive(true);
+            }
+
             if(!hasLeftDoor)
             {
                 LeftDoor.setActive(false);
             }
+            else
+            {
+                LeftDoor.setActive(true);
+            }
+
             doorsSet = true;
         }
 

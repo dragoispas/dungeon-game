@@ -23,6 +23,7 @@ TagManager:
   - Camera
   - FollowPlayerX
   - FollowPlayerY
+  - Passthrough
   layers:
   - Default
   - TransparentFX

@@ -40,34 +40,74 @@ public class BigRoomDetails : MonoBehaviour
             {
                 TopLeftDoor.setActive(false);
             }
+            else
+            {
+                TopLeftDoor.setActive(true);
+            }
+
             if(!hasDoorTopRight)
             {
                 TopRightDoor.setActive(false);
             }
+            else
+            {
+                TopRightDoor.setActive(true);
+            }
+
             if(!hasDoorRightTop)
             {
                 RightTopDoor.setActive(false);
             }
+            else
+            {
+                RightTopDoor.setActive(true);
+            }
+
             if(!hasDoorRightBottom)
             {
                 RightBottomDoor.setActive(false);
             }
+            else
+            {
+                RightBottomDoor.setActive(true);
+            }
+
             if(!hasDoorBottomRight)
             {
                 BottomRightDoor.setActive(false);
             }
+            else
+            {
+                BottomRightDoor.setActive(true);
+            }
+
             if(!hasDoorBottomLeft)
             {
                 BottomLeftDoor.setActive(false);
             }
+            else
+            {
+                BottomLeftDoor.setActive(true);
+            }
+
             if(!hasDoorLeftBottom)
             {
                 LeftBottomDoor.setActive(false);
             }
+            else
+            {
+                LeftBottomDoor.setActive(true);
+            }
+
             if(!hasDoorLeftTop)
             {
                 LeftTopDoor.setActive(false);
             }
+            else
+            {
+                LeftTopDoor.setActive(true);
+            }
+
             doorsSet = true;
         }
     }
