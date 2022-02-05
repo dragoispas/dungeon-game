@@ -132,6 +132,7 @@ MonoBehaviour:
   DoorSwitch: {fileID: 7542457658835121417}
   Passthrough: {fileID: 6666005386533719118}
   BasicWall: {fileID: 0}
+  DoorSprite: {fileID: 5702251818223560700}
 --- !u!1 &6666005386533719118
 GameObject:
   m_ObjectHideFlags: 0
