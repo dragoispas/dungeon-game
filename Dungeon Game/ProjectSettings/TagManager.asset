@@ -25,6 +25,7 @@ TagManager:
   - FollowPlayerY
   - Passthrough
   - RoomsContainer
+  - Enemy
   layers:
   - Default
   - TransparentFX
