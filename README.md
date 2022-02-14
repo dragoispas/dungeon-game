@@ -16,6 +16,8 @@ To Do
 - slow and freeze (increase drag, when drag reaches x, freeze)
 - debuff and knockback for void
 
+### To redesign camera follow system
+
 
 
 ===
