@@ -12,13 +12,18 @@ Ideas
 To Do
 ====
 
-- cannotSpawnLRoomBottomLeft and other 3 not working properly, commented them for now (will always only spawn 4 L rooms because cannotSpawn goes true after first spawn even though it should be able to spawn more)
-
-- first room does not open and close doors - make it so it only opens and closes doors in the active room where the player is
-
-- add the new tiles to all room types - only L rooms left to be done
+- explosion for fire element
+- slow and freeze (increase drag, when drag reaches x, freeze)
+- debuff and knockback for void
 
 
-- add shadows to walls
+
+===
+
+### Projectile along with it's element is created and initialized in ProjectileController.cs
+
+### Projectile.cs sets the projectile parameters recieved from controller and also manages triggers
+
+### Enemy.cs will handle all damage functions and other elemental blights. Projectile.cs will call damage functions.
 
 

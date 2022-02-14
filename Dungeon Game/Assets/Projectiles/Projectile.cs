@@ -6,9 +6,6 @@ public class Projectile : MonoBehaviour
 {
     public Rigidbody2D rb;
 
-    public string Element;
-
-    public Sprite sprite;
     public float kineticDmg;
     public float elementalDmg;
     // public float RoF;
@@ -23,7 +20,6 @@ public class Projectile : MonoBehaviour
         rb.velocity = transform.up * speed;
 
         transform.localScale = new Vector3(transform.localScale.x * size, transform.localScale.y * size, transform.localScale.z * size);
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprite;
     }
 
     // Update is called once per frame
@@ -39,6 +35,12 @@ public class Projectile : MonoBehaviour
             Enemy enemy = collider2D.GetComponent<Enemy>();
             enemy.TakeDamage(kineticDmg);
             enemy.TakeDamage(elementalDmg);
+
+            FireElement fireElement = gameObject.GetComponent<FireElement>();
+            if(fireElement!=null)
+            {
+                enemy.Burn(fireElement.burn, fireElement.numberOfTics);
+            }
 
             Destroy(gameObject);
         }
