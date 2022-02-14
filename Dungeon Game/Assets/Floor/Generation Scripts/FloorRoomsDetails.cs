@@ -1232,11 +1232,11 @@ public class FloorRoomsDetails : MonoBehaviour
 
             LRoomsToSpawn--;
             Debug.Log("Decreased LRoomsToSpawn to "+LRoomsToSpawn+ " and added this new room : " +newLRoom);
-            return;
+            break;
 
         }
 
-        cannotSpawnLRoomTopLeft = true;
+        // cannotSpawnLRoomTopLeft = true;
         
     }
 
@@ -1378,11 +1378,11 @@ public class FloorRoomsDetails : MonoBehaviour
 
             LRoomsToSpawn--;
             Debug.Log("Decreased LRoomsToSpawn to "+LRoomsToSpawn+ " and added this new room : " +newLRoom);
-            return;
+            break;
 
         }
 
-        cannotSpawnLRoomTopRight = true;
+        //cannotSpawnLRoomTopRight = true;
         
     }
 
@@ -1524,11 +1524,11 @@ public class FloorRoomsDetails : MonoBehaviour
 
             LRoomsToSpawn--;
             Debug.Log("Decreased LRoomsToSpawn to "+LRoomsToSpawn+ " and added this new room : " +newLRoom);
-            return;
+            break;
 
         }
 
-        cannotSpawnLRoomBottomRight = true;
+        // cannotSpawnLRoomBottomRight = true;
         
     }
 
@@ -1671,11 +1671,11 @@ public class FloorRoomsDetails : MonoBehaviour
 
             LRoomsToSpawn--;
             Debug.Log("Decreased LRoomsToSpawn to "+LRoomsToSpawn+ " and added this new room : " +newLRoom);
-            return;
+            break;
 
         }
 
-        cannotSpawnLRoomBottomLeft = true;
+        // cannotSpawnLRoomBottomLeft = true;
         
     }
 

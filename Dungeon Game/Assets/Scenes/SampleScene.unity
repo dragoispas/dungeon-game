@@ -878,7 +878,7 @@ MonoBehaviour:
   RoomsToGenerate: 40
   MaxHeightOrLength: 6
   extraRooms: 10
-  LRoomsToSpawn: 30
+  LRoomsToSpawn: 0
   Grid: []
   Rooms: []
   RestrictedPositions: []
@@ -1156,7 +1156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoomCoords: {x: 0, y: 0}
-  roomControl: {fileID: 0}
 --- !u!114 &1874651907
 MonoBehaviour:
   m_ObjectHideFlags: 0
