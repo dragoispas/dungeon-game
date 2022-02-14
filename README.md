@@ -26,4 +26,4 @@ To Do
 
 ### Enemy.cs will handle all damage functions and other elemental blights. Projectile.cs will call damage functions.
 
-
+### make projectiles move with forces instead of transform
