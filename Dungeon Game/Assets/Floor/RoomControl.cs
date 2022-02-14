@@ -53,19 +53,9 @@ public class RoomControl : MonoBehaviour
         {
             return;
         }
-
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            openDoors();
-        }
-
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            closeDoors();
-        }
     }
 
-    void closeDoors()
+    public void closeDoors()
     {
         for(int i=0 ; i<Doors.Length ; i++)
         {
@@ -75,7 +65,7 @@ public class RoomControl : MonoBehaviour
             }
         }
     }
-    void openDoors()
+    public void openDoors()
     {
         for(int i=0 ; i<Doors.Length ; i++)
         {

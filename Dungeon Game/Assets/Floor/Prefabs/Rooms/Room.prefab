@@ -2168,10 +2168,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 904281291986119159}
     m_Modifications:
-    - target: {fileID: 2132038799241525263, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
-      propertyPath: Direction
-      value: BOTTOM
-      objectReference: {fileID: 0}
     - target: {fileID: 3555430273236191188, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
       propertyPath: BasicWall
       value: 
@@ -2759,10 +2755,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 904281291986119159}
     m_Modifications:
-    - target: {fileID: 2132038799241525263, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
-      propertyPath: Direction
-      value: LEFT
-      objectReference: {fileID: 0}
     - target: {fileID: 3555430273236191188, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
       propertyPath: BasicWall
       value: 
@@ -2849,10 +2841,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 904281291986119159}
     m_Modifications:
-    - target: {fileID: 2132038799241525263, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
-      propertyPath: Direction
-      value: TOP
-      objectReference: {fileID: 0}
     - target: {fileID: 3555430273236191188, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
       propertyPath: BasicWall
       value: 
@@ -2939,10 +2927,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 904281291986119159}
     m_Modifications:
-    - target: {fileID: 2132038799241525263, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
-      propertyPath: Direction
-      value: RIGHT
-      objectReference: {fileID: 0}
     - target: {fileID: 3555430273236191188, guid: d62c1cefa57dd93478225f04206423cc, type: 3}
       propertyPath: BasicWall
       value: 
