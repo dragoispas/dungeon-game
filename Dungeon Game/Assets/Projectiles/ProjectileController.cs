@@ -44,10 +44,12 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
     [Header("Arc")]
     public bool Arc;
     public int chain;
+    public float chainDamage;
+    public float chainRadius;
     public float stun;
     private float arc_kineticDmg_modifier = 0.25f;
     private float arc_elementalDmg_modifier = 1.25f;
-    private float arc_RoF_modifier = 1.5f;
+    private float arc_RoF_modifier = 1.25f;
     private float arc_manaCost_modifier = 0.5f;
     private float arc_speed_modifier = 0.75f;
     private float arc_range_modifier = 1f;
@@ -68,6 +70,8 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
     [Header("Void")]
     public bool Void;
     public float debuff;
+    public float maxDebuff;
+    public float debuffDuration;
     public float knockback;
     private float void_kineticDmg_modifier = 1f;
     private float void_elementalDmg_modifier = 1f;
@@ -192,6 +196,7 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
     public void ShootFire()
     {
         GameObject newProjectile = Instantiate(FireProjectile, transform.position, Quaternion.Euler(transform.eulerAngles));
+        newProjectile.GetComponent<Rigidbody2D>().mass *= fire_kineticDmg_modifier;
 
         Projectile projectile = newProjectile.GetComponent<Projectile>();
         projectile.kineticDmg = current_kineticDmg;
@@ -215,6 +220,7 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
         Vector3 newPosition = transform.forward + transform.right * arcAlternator * size_modifier + transform.position;
         arcAlternator *= -1;
         GameObject newProjectile = Instantiate(ArcProjectile, newPosition, Quaternion.Euler(transform.eulerAngles));
+        newProjectile.GetComponent<Rigidbody2D>().mass *= arc_kineticDmg_modifier;
 
 
         Projectile projectile = newProjectile.GetComponent<Projectile>();
@@ -228,12 +234,15 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
 
         ArcElement arcElement = newProjectile.GetComponent<ArcElement>();
         arcElement.chain = chain;
+        arcElement.chainDmg = chainDamage * elementalDmg / 5f;
+        arcElement.chainRadius = chainRadius;
         arcElement.stun = stun;
     }
 
     public void ShootVoid()
     {
         GameObject newProjectile = Instantiate(VoidProjectile, transform.position, Quaternion.Euler(transform.eulerAngles));
+        newProjectile.GetComponent<Rigidbody2D>().mass *= void_kineticDmg_modifier;
 
         Projectile projectile = newProjectile.GetComponent<Projectile>();
         projectile.kineticDmg = current_kineticDmg;
@@ -246,12 +255,15 @@ public class ProjectileController : MonoBehaviour // MAKE A SCRIPT TO ATTACH TO 
 
         VoidElement voidElement = newProjectile.GetComponent<VoidElement>();
         voidElement.debuff = debuff;
+        voidElement.maxDebuff = maxDebuff;
         voidElement.knockback = knockback;
+        voidElement.debuffDuration = debuffDuration;
     }
 
     public void ShootFreeze()
     {
         GameObject newProjectile = Instantiate(FreezeProjectile, transform.position, Quaternion.Euler(transform.eulerAngles + new Vector3(0,0,Random.Range(-5f, 5f))));
+        newProjectile.GetComponent<Rigidbody2D>().mass *= freeze_kineticDmg_modifier;
 
         Projectile projectile = newProjectile.GetComponent<Projectile>();
         projectile.kineticDmg = current_kineticDmg;

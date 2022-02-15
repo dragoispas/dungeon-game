@@ -254,13 +254,17 @@ MonoBehaviour:
   numberOfTics: 5
   explosion: 0
   Arc: 0
-  chain: 0
+  chain: 1
+  chainDamage: 1
+  chainRadius: 5
   stun: 0
   Freeze: 0
   slow: 0
   shatter: 0
   Void: 0
-  debuff: 0
+  debuff: 0.1
+  maxDebuff: 1.5
+  debuffDuration: 2
   knockback: 0
 --- !u!1 &90117534
 GameObject:
@@ -383,6 +387,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &132966702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173687, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4496719972976173688, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
+      propertyPath: m_Name
+      value: Enemy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77d52db1daf461642bb1633c51e95b61, type: 3}
 --- !u!1 &200177021
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +994,7 @@ GameObject:
   - component: {fileID: 1874651904}
   m_Layer: 0
   m_Name: PLAYER  +  Terrain Interaction
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

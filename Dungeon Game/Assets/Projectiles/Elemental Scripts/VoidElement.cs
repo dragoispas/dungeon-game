@@ -5,6 +5,8 @@ using UnityEngine;
 public class VoidElement : MonoBehaviour
 {
     public float debuff;
+    public float maxDebuff;
+    public float debuffDuration;
     public float knockback;
     // Start is called before the first frame update
     void Start()
